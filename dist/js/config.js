@@ -4273,8 +4273,8 @@ emojiApp.directive('contenteditable', [ '$sce', function($sce) {
 				+ xoffset + 'px ' + yoffset + 'px no-repeat;';
 		style += 'background-size:' + scaledWidth + 'px ' + scaledHeight
 				+ 'px;';
-		return '<img src="dist/images/blank.gif" class="img" style="'
-				+ style + '" alt="' + util.htmlEntities(name) + '">';
+		return '<img class="img" style="'
++ style + '" alt="' + util.htmlEntities(name) + '">'
 	};
 
 	$.emojiarea.createIcon = EmojiArea.createIcon;
